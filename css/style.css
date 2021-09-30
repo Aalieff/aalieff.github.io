@@ -22,22 +22,38 @@ nav .form-control:focus {
   background: rgb(255, 154, 3);
 }
 
-.img-content a {
+.image-link {
+  overflow: hidden;
   position: relative;
+
 }
 
-.img-content img {
-  width: 280px;
-  display: block;
-  position: relative;
+.image-link img {
+  width: 290px;
+  transition: 0.2s;
 }
 
-.img-content .img-overlay {
-  background: #000;
+.image-link:hover img {
+  transform: scale(1.3);
+  filter: blur(4px);
+  transition: 0.2s;
+}
+
+.img-overlay button {
+  margin: 7px;
+  z-index: 99999;
+}
+
+.image-link:hover .img-overlay {
+  display: flex !important;
+}
+
+.image-link .img-overlay {
+  display: none !important;
   position: absolute;
-  display: flex;
-  top: 0;
-  left: 0;
+  background: rgba(0, 0, 0, 0.041);
   width: 100%;
   height: 100%;
+  top: 0;
+  transition: 0.2s;
 }
