@@ -40,43 +40,43 @@
 
         <div class="img-content d-flex justify-content-between">
             <div class="thumbnail">
-                <a href="">
+                <div>
                     <div class="image-link border border-2 rounded mb-2">
                         <img src="css/parrot.jpg" alt="" class="thumbnail-image">
                         <div class="img-overlay d-flex align-items-center justify-content-center">
-                            <button class="btn btn-secondary"><i class="bi bi-heart"></i></button>
-                            <button class="btn btn-secondary data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-zoom-in"></i></button>                                
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                        ...
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                        </div>
+                            <button class="btn btn-danger"><i class="bi bi-heart"></i></button>
+                            <a href="www.google.com" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-zoom-in"></i></a>
                     </div>
-                </a>
+                </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="img-title d-flex flex-column">
                         <span>Letter R logo</span>
                         <sub><span class="text-success fw-bold">$250</span> <span class="fw-light">(USD)</span></sub>
                     </div>
-                    <a href=""><button class="badge bg-secondary btn">Buy</button></a>
+                    <a href=""><button class="badge bg-success btn"><i class="bi bi-bag-fill"></i> beli</button></a>
                 </div>
             </div>
         </div>
     </div>
+  
+    <!-- Zoom Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Simple parrot logo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="css/parrot.jpg" alt="" class="bg-dark" width="100%">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary"><i class="bi bi-bag-fill"></i> Beli</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
